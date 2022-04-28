@@ -41,10 +41,10 @@ export default {
   name: "BuildingsList",
   computed: {
     buildings() {
-      return this.$store.state.buildings.data;
+      return this.$store.state.buildingsModule.buildings.data;
     },
     loading() {
-      return this.$store.state.buildings.loading;
+      return this.$store.state.buildingsModule.buildings.loading;
     },
   },
 

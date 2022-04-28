@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import Building from "../views/BuildingView.vue";
+import Location from "../views/LocationView.vue";
+import AddLocationView from "../views/AddLocationView.vue";
 import AddBuildingView from "../views/AddBuildingView.vue";
 import EditBuildingView from "../views/EditBuildingView.vue";
 
@@ -14,6 +16,16 @@ const routes = [
     path: "/building/:id",
     name: "Building",
     component: Building,
+  },
+  {
+    path: "/location/:id",
+    name: "Location",
+    component: Location,
+  },
+  {
+    path: "/add-location/:id",
+    name: "AddLocationView",
+    component: AddLocationView,
   },
   {
     path: "/add-building",
